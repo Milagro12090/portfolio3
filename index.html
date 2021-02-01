@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/RCblk.png" />
+
+ 
+  <title>
+    Costello Web Portfolio
+  </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Riley Costello</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>aspiring web developer in Lakewood Co</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Spotifind</h3>
+              <p>
+                This is a simple, frontend application that can play and view music from spotify with your spotify account. This was a group project and the contributers are listed on the github repository. 
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nickkeller316.github.io/Spotifinder/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nickkeller316/Spotifinder" title="View source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Spotifinder.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>When we clean scheduler</h3>
+              <p>
+                This is a full stack application. This was also a collaborative that is intended for managers to reliably create schedules. The contributors are also listed on the github repository. 
+              </p>
+              <ul class="work__list">
+                <li>Nodejs</li>
+                <li>Express</li>
+                <li>Handlebars</li>
+                <li>Javascript</li>
+                <li>Passport</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://when-we-clean.herokuapp.com/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/milehighcoder/project-two">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/wwc.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Note Taker</h3>
+              <p>
+                This was my first full stack application. It is just a simple note taker that is very similar to notes on your phone. 
+              </p>
+              <ul class="work__list">
+                <li>node.js</li>
+                <li>mysql</li>
+                <li>Javascript</li>
+                <li>HTML/CSS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://note-taker-main.herokuapp.com/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Milagro12090/note-taker">
+                  <img src="./images/RC.png" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/note.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I am currently studying full stack web development at Denver University, through their coding bootcamp. I will be (hopefully) graduating in mid March. I am currently working as a kitchen manager at a pizza restaruant near me and I am living in Belmar with my girlfriend Merisa and our cat Ron. 
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://my.indeed.com/p/rileyc-lf43ujx" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/riles.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Contact me</h2>
+      <div class="contact__info">
+        <p>
+          If you are looking for a simple website for your product or buisness, or if you are looking for an employee with full stack expierience, please dont hesistate to contact me through my email. I will also be creating a fiver soon for smaller projects. Thank you for taking the time to view my site.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:rileytcostello@gmail.com" class="btn">rileytcostello@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Milagro12090" title="Link to Github Profile">
+            <img src="./images/RC.png" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+       
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/riley-costello-84bab91b6/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="assets/index.js"></script>
+</body>
+
+</html>
