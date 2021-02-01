@@ -26,8 +26,6 @@
   --pink: #c52542;
   --white: #ececec;
   --white-1: #ffffffda;
-  --blue: #2929dbda;
-  --green: #33ff2cda;
 
   /*container max dimension declaration for moblie devices*/
 
@@ -136,6 +134,16 @@ h3 {
   }
 }
 
+/*h1, h2 and h3 variables for css and mobile resizing*/
+h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 45rem;
+  background: var(--pink);
+  margin: var(--gutter-small) 0;
+}
+
 h2 {
   font-size: var(--font-size-large);
   margin-bottom: var(--gutter-medium);
@@ -169,6 +177,8 @@ h3 {
   }
 }
 
+/*same thing for p and a tags*/
+
 p {
   margin: var(--gutter-small-1) 0;
 }
@@ -187,10 +197,14 @@ a {
   outline: 2px solid transparent;
 }
 
+/*brings user back if tabbed*/
+
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) a:focus {
   outline: none;
 }
+
+/*variable declaration for buttons and button hovers */
 
 .btn {
   position: relative;
@@ -235,6 +249,8 @@ body:not(.user-is-tabbing) a:focus {
   background: transparent;
 }
 
+/*link text variables and resizing*/
+
 .link__text {
   position: relative;
   display: inline-block;
@@ -272,6 +288,7 @@ body:not(.user-is-tabbing) a:focus {
   font-family: sans-serif;
 }
 
+/*back to top button variables and resizing*/
 .back-to-top {
   position: fixed;
   bottom: 4rem;
@@ -303,6 +320,8 @@ body:not(.user-is-tabbing) a:focus {
     right: 1rem;
   }
 }
+
+/*nav items placing and reizing and css variables*/
 
 .nav {
   display: flex;
@@ -368,6 +387,8 @@ body:not(.user-is-tabbing) a:focus {
   background: var(--pink);
 }
 
+/*variables for header and background image along with mobile resizing as well*/
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
     url("./images/header.png");
@@ -401,6 +422,8 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
+/*work box items with resizing*/
+
 .work__box {
   display: flex;
   align-items: center;
@@ -422,6 +445,8 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 20rem;
   }
 }
+
+/*work box items*/
 
 .work__links {
   display: flex;
@@ -465,6 +490,8 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
+/*about section css and resizing*/
+
 .about__content {
   display: flex;
   flex-direction: row-reverse;
@@ -492,6 +519,8 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 var(--gutter-huge) 0 0;
   }
 }
+
+/*finally contact and footer section css and resizing*/
 
 .contact__info {
   max-width: var(--container-medium-width);
